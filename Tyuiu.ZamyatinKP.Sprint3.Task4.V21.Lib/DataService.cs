@@ -6,15 +6,15 @@ namespace Tyuiu.ZamyatinKP.Sprint3.Task4.V21.Lib
     {
         public double Calculate(int startValue, int stopValue)
         {
-            double res = 0;
-            for (int x = startValue; x < stopValue; x++)
+            double res = 1;
+            for (int x = startValue; x <= stopValue; x++)
             {
                 if (x != 0)
                 {
-                    res *= (Math.Cos(x) - x) / x;
+                    res *= ((Math.Cos(x) - x) / x);
                 }
             }
-            return res;
+            return Math.Round(res, 3);
         }
     }
 }

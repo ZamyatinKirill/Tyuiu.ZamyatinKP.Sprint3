@@ -11,7 +11,7 @@ namespace Tyuiu.ZamyatinKP.Sprint3.Task4.V21.Test
             int start = -5;
             int stop = 5;
             double res = ds.Calculate(start, stop);
-            double wait = 0;
+            double wait = 0.586;
 
             Assert.Equal(wait, res);
         }
